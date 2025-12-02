@@ -17,7 +17,7 @@ for i in range(1,20):
     if x[i]>massimo:
         massimo=x[i]
         indice_massimo=i
-print(massiimo,y[indice_massimo])
+print(massimo,y[indice_massimo])
 
 
 massimo=y[0]
@@ -25,7 +25,7 @@ for i in range(1,20):
     if y[i]>massimo:
         massimo=y[i]
         indice_massimo=i
-print(massiimo,x[indice_massimo])
+print(massimo,x[indice_massimo])
     
 #le tuple sono numeri raggruppati nelle parentisi tonde
 
@@ -33,7 +33,18 @@ punti_cartesiano=[]
 for i in range(0,20):
     punto=(random.randint(0,10),random.randint(0,10))
     punti_cartesiano.append(punto)
+    
+massimo=punti_cartesiano[0]
+if i in range(1,20):
+    if punti_cartesiano[i][0]>massimo[0]:
+        massimo = punti_cartesiano[i]
+print(massimo)
 
+minimo=punti_cartesiano[0]
+if i in range(1,20):
+    if punti_cartesiano[i][1]<minimo[1]:
+        minimo = punti_cartesiano[i]
+print(minimo)
     
 #come accedere alla x del primo punto:
 print (punti_cartesiano[0][0])
