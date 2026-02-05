@@ -1,0 +1,37 @@
+#scrivere un programma che dati due punti in un piano cartesiano
+#scriva l'equazione della retta associata e mandi in output il
+#mesaggio con la positività del coefficente angolare
+
+#1- m=y-y/x-x ---->> questa è una funzione  [parametri (xUno,xDue,xTre,XQuattro)]
+#2- y-y=m(x-x) ----->> questa è una procedura   [parametri (m,xDue,xTre)]
+import random
+def calcolo_m(tuplaUno,tuplaDue):
+    m=(tuplaDue[1]-tuplaUno[1])/(tuplaDue[0]-tuplaUno[0])
+    return (m)
+
+
+def equazione(m,tuplaDue,tuplaUno):
+    eq="y"+str(tuplaDue[1])+"="+str(m)+"(x-"+str(tuplaUno[0])+")"  #--->succesione di stringhe, faato un messagio e il +serve per conatenate le stringhe, inizi la stringa da una parte
+#fissa +il valore di y che è variabile.
+    print(eq)
+    
+def controllo_m(m):
+    if m>0:
+        print("m ha segno positivo")
+    elif m==0:
+        print("mè nullo")
+    else:
+        print("m ha segno negativo")
+
+    
+if __name__ =='__main__':
+    puntoUno=(random.randint(-20,20),random.randint(-20,20))
+    puntoDue=(random.randint(-20,20),random.randint(-20,20))
+
+    
+    coefficente_angolare=calcolo_m(puntoUno,puntoDue)
+    print(coefficente_angolare)
+    equazione(coefficente_angolare,puntoDue,puntoUno)
+    controllo_m(coefficente_angolare)
+    
+    
