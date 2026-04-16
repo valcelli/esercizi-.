@@ -78,3 +78,4 @@ if __name__ == "__main__":
     dom=varianza(media_domenica,domenica)
     print("la varianza della domeinca é",domenica)
     
+    

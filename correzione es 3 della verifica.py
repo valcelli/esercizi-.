@@ -30,6 +30,7 @@ if __name__ == "__main__":
     classe=[6,7,5,8]
     aggiungi_voto(classe,9)
     print(media_registro(classe,arrotonda_a=1))
+#media_del_registro=media_registro(arrotonda_a 1)
     sufficenze=solo_sufficienti(classe)
     print(sufficenze)
     stampa_esito(classe)
